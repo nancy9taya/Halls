@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "engines": {
-    "node": "^14.5.0"
-  },
   "dependencies": {
     "@cloudant/cloudant": "^4.2.4",
     "bcryptjs": "^2.4.3",
