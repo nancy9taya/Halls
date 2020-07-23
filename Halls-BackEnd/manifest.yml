@@ -1,7 +1,7 @@
 ---
 applications:
- - name: Halls
-   memory: 64M
+ - name: HallsBack
+   memory: 128M
    env:
      OPTIMIZE_MEMORY: true
      #NODE_OPTIONS:   --max-old-space-size=96
