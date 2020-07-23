@@ -53,7 +53,7 @@
     "chai-http": "^1.0.0"
   },
   "scripts": {
-    "start": "node --trace-gc server.js",
+    "start": "nodemon server",
     "watch": "nodemon server",
     "test": "mocha --timeout 720000",
     "unit-test": "mocha",
