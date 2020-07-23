@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines": {
+    "node": "^14.5.0"
+  },
   "dependencies": {
     "@cloudant/cloudant": "^4.2.4",
     "bcryptjs": "^2.4.3",
@@ -29,6 +32,7 @@
     "mp3-duration": "^1.1.0",
     "multer": "^1.4.2",
     "music-metadata": "^6.4.0",
+    "node": "^14.5.0",
     "nodemailer": "^6.4.6",
     "nodemon": "^2.0.2",
     "passport": "^0.4.1",
@@ -49,9 +53,7 @@
     "chai-http": "^1.0.0"
   },
   "scripts": {
-    "front" : "nodemon ser",
-    "start": "node --trace-gc server.js",
-    "app": "nodemon cloudant",
+    "start": "nodemon server",
     "watch": "nodemon server",
     "test": "mocha --timeout 720000",
     "unit-test": "mocha",

@@ -1,9 +1,7 @@
 ---
 applications:
  - name: Halls
-   random-route: true
-   memory: 256M
-   disk_quota: 256M
+   memory: 64M
    env:
-    CF_STAGING_TIMEOUT: 40
-    CF_STARTUP_TIMEOUT: 10
+     OPTIMIZE_MEMORY: true
+     #NODE_OPTIONS:   --max-old-space-size=96
