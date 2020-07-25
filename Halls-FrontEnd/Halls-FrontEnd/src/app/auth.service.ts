@@ -6,7 +6,7 @@ import{Router} from '@angular/router'
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl="https://hallsback.eu-gb.mybluemix.net"
+  public baseUrl="https://hallsback.eu-gb.mybluemix.net"
   //private baseUrl="http://localhost:3000";
   private _loginUrl=this.baseUrl+"/user/login";
   private _signUpUrl=this.baseUrl+"/user/signup"
