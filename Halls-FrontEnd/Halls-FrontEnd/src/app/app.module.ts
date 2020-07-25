@@ -20,6 +20,7 @@ import {AuthGuard} from './auth.guard'
 import {TokenInterceptorService} from './token-interceptor.service';
 import { ForgetPassComponent } from './forgetpass/forgetpass.component';
 import { ResetpassComponent } from './resetpass/resetpass.component'
+import {HashLocationStrategy,LocationStrategy} from '@angular/common'
 
 @NgModule({
   declarations: [
@@ -54,6 +55,10 @@ import { ResetpassComponent } from './resetpass/resetpass.component'
       provide:HTTP_INTERCEPTORS,
       useClass:TokenInterceptorService,
       multi:true
+    },
+    {
+      provide:LocationStrategy,
+      useClass:HashLocationStrategy
     }
   ],
   bootstrap: [AppComponent]
